@@ -1,31 +1,7 @@
 {
-  "name": "namit-portfolio",
-  "version": 2,
   "buildCommand": "",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
+  "framework": "static",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    }
-  ]
+  "trailingSlash": false
 }
