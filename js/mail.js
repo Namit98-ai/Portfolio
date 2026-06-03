@@ -1,6 +1,6 @@
 // EmailJS Configuration
 // Initialize EmailJS with your Public Key
-emailjs.init("_YOUR_PUBLIC_KEY_"); // You'll get this from EmailJS dashboard
+emailjs.init("if1H8ogSUT5O_ISfD");
 
 // Contact Form Handling
 document.addEventListener('DOMContentLoaded', function() {
@@ -52,7 +52,7 @@ function sendEmail(name, email, subject, message) {
         reply_to: email
     };
 
-    emailjs.send('service_YOUR_SERVICE_ID', 'template_YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_9rlyphw', 'template_hg3n66q', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             showMessage('✓ Message sent successfully! I\'ll get back to you soon.', 'success');
