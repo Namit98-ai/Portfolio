@@ -1,0 +1,19 @@
+{
+  "name": "namit-portfolio",
+  "version": "2.0.0",
+  "description": "Namit Khatiwada - AI Engineer & Logistics Executive Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Portfolio is ready to deploy'",
+    "build": "echo 'No build required for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "machine-learning",
+    "logistics",
+    "developer"
+  ],
+  "author": "Namit Khatiwada",
+  "license": "MIT"
+}
