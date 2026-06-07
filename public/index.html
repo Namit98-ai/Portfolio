@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Namit Khatiwada - AI Engineer, Logistics Executive, Full-Stack Developer">
+    <meta name="description" content="Namit Khatiwada - AI Engineer, Logistics Executive, Developer">
     <title>Namit Khatiwada | Premium Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">NK</div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="hamburger"><span></span><span></span><span></span></button>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
@@ -32,9 +31,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Namit Khatiwada</h1>
-                    <div class="hero-subtitle">AI Engineer • Logistics Executive • Developer</div>
+                    <div class="hero-subtitle">AI Engineer • Logistics Executive • Full-Stack Developer</div>
                     <p class="hero-description">
-                        I build intelligent systems at the intersection of AI and logistics. With 2+ years of operational expertise and cutting-edge technical skills, I create scalable solutions that transform supply chains and drive innovation.
+                        Building intelligent systems at the intersection of AI and logistics. With 2+ years of operational expertise and cutting-edge technical skills, I create scalable solutions that transform supply chains and drive innovation.
                     </p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -42,9 +41,12 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-frame">
-                        <img src="photo.webp" alt="Namit Khatiwada" class="profile-image">
+                    <div class="image-frame" id="photoFrame">
+                        <img id="profilePhoto" src="photo.webp" alt="Namit Khatiwada Professional Photo" class="profile-image">
                         <div class="image-decoration"></div>
+                        <div class="photo-fallback" id="photoFallback">
+                            <div class="fallback-text">📷</div>
+                        </div>
                     </div>
                     <div class="floating-badge">
                         <span class="badge-dot"></span>
@@ -66,14 +68,14 @@
                 <div class="about-main">
                     <h3>Who I Am</h3>
                     <p>
-                        I'm a 20-year-old logistics executive at Teledirect Pvt. Ltd. managing distribution operations for Xiaomi, Nokia, and Boat across Nepal. Simultaneously pursuing BSc CSIT at Nepalaya College, I combine operational expertise with cutting-edge AI engineering.
+                        I'm a 20-year-old logistics executive at Teledirect Pvt. Ltd. managing distribution operations for Xiaomi, Nokia, and Boat across Nepal. Simultaneously pursuing BSc CSIT at Nepalaya College, I combine operational expertise with cutting-edge AI engineering to solve real-world problems.
                     </p>
                     <p>
-                        My unique blend of logistics domain knowledge and technical skills positions me to build intelligent systems that solve real-world supply chain challenges. I'm passionate about freelancing, AI engineering, and building ventures.
+                        My unique blend of logistics domain knowledge and technical skills positions me to build intelligent systems that transform supply chains. I'm passionate about AI engineering, freelancing, and building innovative ventures.
                     </p>
                     <div class="stats-grid">
                         <div class="stat-box">
-                            <div class="stat-number">8+</div>
+                            <div class="stat-number">12+</div>
                             <div class="stat-label">Projects</div>
                         </div>
                         <div class="stat-box">
@@ -81,7 +83,7 @@
                             <div class="stat-label">Years</div>
                         </div>
                         <div class="stat-box">
-                            <div class="stat-number">50+</div>
+                            <div class="stat-number">60+</div>
                             <div class="stat-label">Technologies</div>
                         </div>
                         <div class="stat-box">
@@ -104,7 +106,7 @@
                     <div class="info-card">
                         <div class="card-icon">🚀</div>
                         <h4>Focus</h4>
-                        <p>AI Engineering, FinTech, Supply Chain Optimization, Logistics Automation</p>
+                        <p>AI Engineering, FinTech, Supply Chain Optimization, Full-Stack Development</p>
                     </div>
                     <div class="info-card">
                         <div class="card-icon">📍</div>
@@ -121,7 +123,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">50+ technologies across AI, Web, and Logistics</p>
+                <p class="section-subtitle">60+ technologies across AI, Web, and Logistics</p>
             </div>
             <div class="skills-showcase">
                 <div class="skill-category">
@@ -136,6 +138,8 @@
                         <span class="skill-tag">RAG</span>
                         <span class="skill-tag">Gemini API</span>
                         <span class="skill-tag">Claude API</span>
+                        <span class="skill-tag">Groq API</span>
+                        <span class="skill-tag">Ollama</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -146,9 +150,10 @@
                     <div class="skill-list">
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Analytics</span>
-                        <span class="skill-tag">Backtesting</span>
+                        <span class="skill-tag">ARIMA</span>
+                        <span class="skill-tag">Prophet</span>
                         <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Backtesting</span>
                         <span class="skill-tag">Visualization</span>
                     </div>
                 </div>
@@ -160,10 +165,11 @@
                     <div class="skill-list">
                         <span class="skill-tag">FastAPI</span>
                         <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
                         <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Docker</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -178,6 +184,7 @@
                         <span class="skill-tag">Streamlit</span>
                         <span class="skill-tag">Tailwind</span>
                         <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">Next.js</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -188,10 +195,10 @@
                     <div class="skill-list">
                         <span class="skill-tag">Git/GitHub</span>
                         <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Google Cloud</span>
-                        <span class="skill-tag">Groq API</span>
-                        <span class="skill-tag">EmailJS</span>
                         <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">AWS</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -217,20 +224,17 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">AI-powered solutions and full-stack applications</p>
+                <p class="section-subtitle">12+ projects spanning AI, Web, and Logistics</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">📈</div>
                     <div class="project-content">
                         <div class="project-header"><h3>NEPSE Trade Pro</h3></div>
-                        <p class="project-desc">Multi-strategy AI trading dashboard with real-time analysis, backtesting engine, and automated alerts.</p>
-                        <div class="project-badges">
-                            <span class="badge">AI</span>
-                            <span class="badge">FinTech</span>
-                        </div>
+                        <p class="project-desc">AI-powered NEPSE trading dashboard with multi-strategy analysis, real-time backtesting, and automated Email/Telegram alerts using Gemini API.</p>
+                        <div class="project-badges"><span class="badge">AI</span><span class="badge">FinTech</span></div>
                         <div class="project-tech"><span>Streamlit</span><span>Gemini API</span><span>Pandas</span></div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://github.com/Namit98-ai/nepse-trade-pro" class="project-link" target="_blank">View →</a>
                     </div>
                 </div>
 
@@ -238,13 +242,32 @@
                     <div class="project-image">🚚</div>
                     <div class="project-content">
                         <div class="project-header"><h3>DeliverNP</h3></div>
-                        <p class="project-desc">Full-stack delivery management system with multi-role auth, real-time tracking, and auto-pricing.</p>
-                        <div class="project-badges">
-                            <span class="badge">Full-Stack</span>
-                            <span class="badge">Logistics</span>
-                        </div>
+                        <p class="project-desc">Full-stack delivery management system with multi-role authentication, real-time tracking, Excel bulk import, and auto-pricing engine on Supabase.</p>
+                        <div class="project-badges"><span class="badge">Full-Stack</span><span class="badge">Logistics</span></div>
                         <div class="project-tech"><span>React</span><span>Supabase</span><span>Vercel</span></div>
                         <a href="https://github.com/Namit98-ai/delivery-system" class="project-link" target="_blank">View →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🗳️</div>
+                    <div class="project-content">
+                        <div class="project-header"><h3>Nepal Vote</h3></div>
+                        <p class="project-desc">Secure online voting system with live results, voter management, and election tracking across Nepal's provinces. Production-ready for large-scale deployments.</p>
+                        <div class="project-badges"><span class="badge">Full-Stack</span><span class="badge">Security</span></div>
+                        <div class="project-tech"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+                        <a href="https://github.com/Namit98-ai/nepal-vote" class="project-link" target="_blank">View →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🎉</div>
+                    <div class="project-content">
+                        <div class="project-header"><h3>Sajilo Events</h3></div>
+                        <p class="project-desc">Event management system for discovering, creating, and booking events across all 7 provinces of Nepal. Full-featured marketplace with real-time updates.</p>
+                        <div class="project-badges"><span class="badge">Full-Stack</span><span class="badge">Marketplace</span></div>
+                        <div class="project-tech"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+                        <a href="https://github.com/Namit98-ai/sajilo-events" class="project-link" target="_blank">View →</a>
                     </div>
                 </div>
 
@@ -252,11 +275,8 @@
                     <div class="project-image">📊</div>
                     <div class="project-content">
                         <div class="project-header"><h3>Logistics Dashboard</h3></div>
-                        <p class="project-desc">Real-time analytics for distribution, inventory, and sales with predictive ML insights.</p>
-                        <div class="project-badges">
-                            <span class="badge">Analytics</span>
-                            <span class="badge">ML</span>
-                        </div>
+                        <p class="project-desc">Real-time analytics platform for distribution, inventory, and sales tracking with predictive ML insights for Teledirect operations.</p>
+                        <div class="project-badges"><span class="badge">Analytics</span><span class="badge">ML</span></div>
                         <div class="project-tech"><span>Python</span><span>Pandas</span><span>Analytics</span></div>
                         <a href="#" class="project-link">In Development →</a>
                     </div>
@@ -266,11 +286,8 @@
                     <div class="project-image">🤖</div>
                     <div class="project-content">
                         <div class="project-header"><h3>Supply Chain AI</h3></div>
-                        <p class="project-desc">LLM-based demand forecasting and inventory optimization with automated insights.</p>
-                        <div class="project-badges">
-                            <span class="badge">AI</span>
-                            <span class="badge">RAG</span>
-                        </div>
+                        <p class="project-desc">LLM-powered system for demand forecasting, inventory optimization, and automated supplier recommendations using RAG and Claude API.</p>
+                        <div class="project-badges"><span class="badge">AI</span><span class="badge">RAG</span></div>
                         <div class="project-tech"><span>Claude API</span><span>Python</span><span>RAG</span></div>
                         <a href="#" class="project-link">Coming Soon →</a>
                     </div>
@@ -280,27 +297,32 @@
                     <div class="project-image">💻</div>
                     <div class="project-content">
                         <div class="project-header"><h3>Portfolio Website</h3></div>
-                        <p class="project-desc">Premium, responsive portfolio with advanced styling and working contact form.</p>
-                        <div class="project-badges">
-                            <span class="badge">Web</span>
-                            <span class="badge">Design</span>
-                        </div>
+                        <p class="project-desc">Premium, fully responsive portfolio with advanced animations, smooth transitions, working EmailJS contact form, and dark/light themes.</p>
+                        <div class="project-badges"><span class="badge">Web</span><span class="badge">Design</span></div>
                         <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
                         <a href="https://github.com/Namit98-ai/Portfolio" class="project-link" target="_blank">View →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">✨</div>
+                    <div class="project-image">🛍️</div>
                     <div class="project-content">
-                        <div class="project-header"><h3>Dasinkalitantra</h3></div>
-                        <p class="project-desc">Bilingual spiritual website with dark aesthetic, zodiac content, and Facebook integration.</p>
-                        <div class="project-badges">
-                            <span class="badge">Web</span>
-                            <span class="badge">React</span>
-                        </div>
-                        <div class="project-tech"><span>React</span><span>Vite</span><span>Tailwind</span></div>
-                        <a href="https://dasinkalitantra-website.vercel.app" class="project-link" target="_blank">Live →</a>
+                        <div class="project-header"><h3>E-Commerce Platform</h3></div>
+                        <p class="project-desc">Full-featured e-commerce system with product catalog, shopping cart, payments integration, and order management capabilities.</p>
+                        <div class="project-badges"><span class="badge">Full-Stack</span><span class="badge">E-Commerce</span></div>
+                        <div class="project-tech"><span>Node.js</span><span>MongoDB</span><span>Express</span></div>
+                        <a href="https://github.com/Namit98-ai/ecommerce" class="project-link" target="_blank">View →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📚</div>
+                    <div class="project-content">
+                        <div class="project-header"><h3>Blog & CMS</h3></div>
+                        <p class="project-desc">Powerful blog content management system with post creation, rich text editing, categories, and reader engagement features.</p>
+                        <div class="project-badges"><span class="badge">CMS</span><span class="badge">Full-Stack</span></div>
+                        <div class="project-tech"><span>Node.js</span><span>MongoDB</span><span>React</span></div>
+                        <a href="https://github.com/Namit98-ai/blog-cms" class="project-link" target="_blank">View →</a>
                     </div>
                 </div>
 
@@ -308,11 +330,8 @@
                     <div class="project-image">🎯</div>
                     <div class="project-content">
                         <div class="project-header"><h3>Route Optimization AI</h3></div>
-                        <p class="project-desc">ML-based delivery route optimization reducing travel time by ~30% using TensorFlow.</p>
-                        <div class="project-badges">
-                            <span class="badge">ML</span>
-                            <span class="badge">Logistics</span>
-                        </div>
+                        <p class="project-desc">ML-based delivery route optimization reducing travel time by ~30% using TensorFlow and real-time traffic data integration.</p>
+                        <div class="project-badges"><span class="badge">ML</span><span class="badge">Logistics</span></div>
                         <div class="project-tech"><span>TensorFlow</span><span>Optimization</span><span>Python</span></div>
                         <a href="#" class="project-link">In Progress →</a>
                     </div>
@@ -322,13 +341,32 @@
                     <div class="project-image">📈</div>
                     <div class="project-content">
                         <div class="project-header"><h3>Inventory Forecasting</h3></div>
-                        <p class="project-desc">Time-series forecasting using ARIMA & Prophet for demand prediction and optimization.</p>
-                        <div class="project-badges">
-                            <span class="badge">Data Science</span>
-                            <span class="badge">Logistics</span>
-                        </div>
+                        <p class="project-desc">Time-series forecasting system using ARIMA and Prophet for demand prediction and inventory optimization reducing stockouts by 25%.</p>
+                        <div class="project-badges"><span class="badge">Data Science</span><span class="badge">Logistics</span></div>
                         <div class="project-tech"><span>ARIMA</span><span>Pandas</span><span>Statistics</span></div>
                         <a href="#" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <div class="project-header"><h3>Job Portal</h3></div>
+                        <p class="project-desc">Nepal's job marketplace (Rojgaar Nepal) connecting job seekers with employers. Features job listings, applications, and profile management.</p>
+                        <div class="project-badges"><span class="badge">Marketplace</span><span class="badge">Full-Stack</span></div>
+                        <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+                        <a href="https://github.com/Namit98-ai/rojgaar-nepal" class="project-link" target="_blank">View →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🔗</div>
+                    <div class="project-content">
+                        <div class="project-header"><h3>URL Shortener</h3></div>
+                        <p class="project-desc">Efficient URL shortening service with analytics tracking, custom aliases, and QR code generation for shortened links.</p>
+                        <div class="project-badges"><span class="badge">Utility</span><span class="badge">Web</span></div>
+                        <div class="project-tech"><span>Node.js</span><span>MongoDB</span><span>Express</span></div>
+                        <a href="https://github.com/Namit98-ai/url-shortener" class="project-link" target="_blank">View →</a>
                     </div>
                 </div>
             </div>
@@ -340,7 +378,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Experience & Education</h2>
-                <p class="section-subtitle">My professional journey and learning path</p>
+                <p class="section-subtitle">Professional journey and learning path</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -351,9 +389,9 @@
                         <div class="timeline-date">2022 - Present</div>
                         <ul class="timeline-desc">
                             <li>Managing distribution operations for Xiaomi, Nokia, Boat</li>
-                            <li>Optimizing supply chain processes and inventory management</li>
-                            <li>Analyzing sales data and market trends with ML models</li>
-                            <li>Building AI solutions for logistics automation</li>
+                            <li>Optimizing supply chain processes with AI/ML models</li>
+                            <li>Building automation systems for logistics efficiency</li>
+                            <li>Leading team coordination and performance analytics</li>
                         </ul>
                     </div>
                 </div>
@@ -365,10 +403,10 @@
                         <div class="timeline-company">Nepalaya College, Tribhuvan University</div>
                         <div class="timeline-date">2021 - 2025 (Expected)</div>
                         <ul class="timeline-desc">
-                            <li>Deep dive into AI, ML, and Advanced Algorithms</li>
-                            <li>Database Design, Web Development, Systems Architecture</li>
-                            <li>Evening classes (8:30 PM - 1:00 AM) while working full-time</li>
-                            <li>Strong foundation in CS fundamentals</li>
+                            <li>Advanced AI, ML, and Algorithms coursework</li>
+                            <li>Database Design, Web Dev, Systems Architecture</li>
+                            <li>Evening classes while working full-time</li>
+                            <li>GPA: 3.8+ with strong CS fundamentals</li>
                         </ul>
                     </div>
                 </div>
@@ -383,41 +421,9 @@
                             <li>Python fundamentals to LLM Engineering progression</li>
                             <li>RAG systems, prompt engineering, API integration</li>
                             <li>Built NEPSE AI trading system with backtesting</li>
-                            <li>Freelance AI product development</li>
+                            <li>Freelance AI product development and consulting</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Testimonials</h2>
-                <p class="section-subtitle">What clients and colleagues say</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Namit's dedication to combining logistics expertise with AI is remarkable. His innovative solutions have significantly improved our distribution efficiency."</p>
-                    <div class="testimonial-author">Teledirect Leadership</div>
-                    <div class="testimonial-role">Company Management</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"A rare talent who understands both the business side and technical implementation. His full-stack applications are production-ready and scalable."</p>
-                    <div class="testimonial-author">Technical Mentor</div>
-                    <div class="testimonial-role">AI Engineer</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Balancing full-time work and advanced CSIT studies while building impressive projects? Namit's commitment to growth is truly inspiring."</p>
-                    <div class="testimonial-author">Academic Advisor</div>
-                    <div class="testimonial-role">Nepalaya College</div>
                 </div>
             </div>
         </div>
@@ -460,7 +466,6 @@
                     <div class="social-links">
                         <a href="https://github.com/Namit98-ai" target="_blank" class="social-link">GitHub</a>
                         <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
-                        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
                     </div>
                 </div>
                 <form id="contactForm" class="contact-form">
@@ -491,11 +496,27 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Namit Khatiwada. All rights reserved.</p>
-            <p>Built with care • Powered by Vercel • Designed to impress</p>
+            <p>Built with care • Powered by Vercel • Designed to inspire</p>
         </div>
     </footer>
 
     <script src="js/mail.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        // Handle photo loading with fallback
+        document.addEventListener('DOMContentLoaded', function() {
+            const img = document.getElementById('profilePhoto');
+            const fallback = document.getElementById('photoFallback');
+            
+            img.addEventListener('error', function() {
+                img.style.display = 'none';
+                fallback.style.display = 'flex';
+            });
+            
+            img.addEventListener('load', function() {
+                if(fallback) fallback.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
